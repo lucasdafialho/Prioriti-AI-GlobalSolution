@@ -16,11 +16,11 @@ O fluxo de dados do sistema IoT segue a seguinte arquitetura:
 
 ```mermaid
 graph LR
-    A[Dispositivo 1: Ambiental<br>(Wokwi)] -- MQTT --> C{Broker MQTT<br>(broker.hivemq.com)};
-    B[Dispositivo 2: Localização/Pânico<br>(Wokwi)] -- MQTT --> C;
-    D[Dispositivo 3: Status<br>(Wokwi)] -- MQTT --> C;
-    C -- MQTT --> E[Dashboard<br>(Node-RED ou Frontend Custom)];
-    E --> F[Visualização +<br>Urgência Simulada];
+    A["Dispositivo 1: Ambiental\n(Wokwi)"] -- MQTT --> C{"Broker MQTT\n(broker.hivemq.com)"};
+    B["Dispositivo 2: Localização/Pânico\n(Wokwi)"] -- MQTT --> C;
+    D["Dispositivo 3: Status\n(Wokwi)"] -- MQTT --> C;
+    C -- MQTT --> E["Dashboard\n(Node-RED ou Frontend Custom)"];
+    E --> F["Visualização +\nUrgência Simulada"];
 ```
 
 ## Dispositivos IoT Simulados (Wokwi)
